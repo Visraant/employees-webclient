@@ -1,0 +1,11 @@
+<h2>Employee Info:</h2>
+
+<h3> Full Name: <%= @employee.full_name %> </h3>
+<p>Email: <%= @employee.email %></p>
+<p>Birthdate: <%= @employee.birthdate %></p>
+<div>
+<p><%= link_to "Edit", "/employees/#{@employee.id}/edit" %></p>
+</div>
+<div>
+<p><%= link_to "Delete", "/employees/#{@employee.id}", method: :delete %></p>
+</div>

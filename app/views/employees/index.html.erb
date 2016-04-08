@@ -1,0 +1,8 @@
+<h1>All Employees:</h1>
+
+<% @employees.each do |employee| %>
+  <h3>Full Name: <%= employee.full_name %> </h3>
+  <p>Email: <%= employee.email %></p>
+  <p>Birthdate: <%= employee.birthdate %></p>
+  <p>Addresses: <%= employee.addresses.first %> </p>
+<% end %>
